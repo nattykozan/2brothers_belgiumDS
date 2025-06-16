@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form button {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.phone-frame {
+    width: 300px;
+    height: 550px;
+    border-radius: 30px;
+    background: #333;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.phone-frame::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #222;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.phone-frame::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #555;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.phone-frame video {
+    width: 100%;
+    height: calc(100% - 30px); 
+    border-radius: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('2brothers_sentados.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    filter: none;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1; 
+}
+section{
+    background: transparent; 
+    box-shadow: none; 
+}
+#carouselExampleIndicators {
+    max-width: 600px; 
+    margin: auto; 
+}
+#sobre {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+nav ul li a {
+    transition: transform 0.3s ease; 
+    display: inline-block; 
+}
+
+nav ul li a:hover {
+    transform: scale(1.2); 
+}
+.Mestre {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.Mestre img {
+    max-width: 500px; 
+    height: auto;
+}
+
+.Mestre p {
+    flex: 1; 
+}
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-bold {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.matangi {
+  font-family: "Matangi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+}
+
+.logo{
+    border: #222 solid 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+ul{
+    font-family: "Matangi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.texto-fonte {
+    font-family: "Matangi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}   
+
+.kimono {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.kimono img {
+    border: #222 solid 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.kimono img:hover {
+    transform: scale(1.05);
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+
+.goog-te-banner-frame,
+.goog-te-gadget {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-te-combo {
+  visibility: hidden;
+}
+
+#custom-translate {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#custom-translate img {
+  margin-left: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#custom-translate img:hover {
+  transform: scale(1.1);
+}

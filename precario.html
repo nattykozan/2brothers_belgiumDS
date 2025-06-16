@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preçário - 2 Brothers Belgium</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <style>
+        #precario {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        ul {
+             list-style: none;
+             padding-left: 0; 
+        }
+
+        ul li::before {
+            content: "→ "; 
+            color: #333; 
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Preçário - 2 Brothers Belgium</h1>
+        <nav>
+            <ul>
+                <li><a href="2brothers.html">Home</a></li>
+                <li><a href="precario.html" target="_blank" rel="noopener noreferrer">Preçário</a></li>
+                <li><a href="horarios.html" target="_blank" rel="noopener noreferrer">Horários</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-container">
+            <img src="logo_2brothersbelgium.png.jpg" alt="Logo 2 Brothers Belgium" class="logo">
+        </div>
+
+        <div id="google_translate_element"></div>
+
+        <div id="custom-translate">
+  <img src="pt.png" alt="Português" onclick="changeLanguage('pt')" width="30">
+  <img src="us.png" alt="English" onclick="changeLanguage('en')" width="30">
+  <img src="bandeira-franca.png" alt="Français" onclick="changeLanguage('fr')" width="30">
+</div>
+    </header>
+
+    <section id="precario">
+        <h2>Preçário</h2>
+        <p>Confira nossos preços e planos para aulas de Jiu-Jitsu:</p>
+        <ul>
+            <li>Aula avulsa: €20</li>
+            <li>Mensalidade: €55</li>
+            <li>Trimestral: €150 (-15€ de desconto)</li>
+            <li>Semestral: €290 (-40€ de desconto)</li>
+            <li>Anual: €560 (-100€ de desconto)</li>
+            <li>Plano familiar Mensal (2 pessoas): €100</li>
+            <li>Plano familiar Mensal (3 pessoas): €140</li>
+            <li>Kimono (uniforme completo c/Faixa branca): 100€</li>
+            
+        </ul>
+    </section>
+
+    <div class="kimono">
+        <img src="kimono.jpg" alt="Kimono 2 Brothers Belgium" width="400px">
+        <p class="texto-fonte">O kimono é essencial para a prática do Jiu-Jitsu, representando tradição e respeito. 
+            Compre o seu e venha treinar conosco!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 2 Brothers Belgium. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'pt',
+      includedLanguages: 'pt,en,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  function changeLanguage(lang) {
+    const select = document.querySelector("select.goog-te-combo");
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+    }
+  }
+</script>
+
+<script>
+  function changeLanguage(lang) {
+    const interval = setInterval(function () {
+      const select = document.querySelector("select.goog-te-combo");
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+        clearInterval(interval);
+      }
+    }, 100);
+  }
+</script>
+</body>
+</html>
